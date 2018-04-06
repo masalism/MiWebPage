@@ -1,0 +1,36 @@
+{
+  "name": "migroziostudija",
+  "version": "1.0.0",
+  "description": "Mi grozio studija",
+  "main": "index.js",
+  "scripts": {
+    "compileindex:sass": "node-sass sass/index.scss css/index.css -w",
+    "compilegalerija:sass": "node-sass sass/galerija.scss css/galerija.css -w",
+    "compilekolektyvas:sass": "node-sass sass/kolektyvas.scss css/kolektyvas.css -w",
+    "compilekontaktai:sass": "node-sass sass/kontaktai.scss css/kontaktai.css -w",
+    "compilepaslaugos:sass": "node-sass sass/paslaugos.scss css/paslaugos.css -w",
+    "compileproduktai:sass": "node-sass sass/produktai.scss css/produktai.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masalism/MiWebPage.git"
+  },
+  "keywords": [
+    "Grozio",
+    "Studija"
+  ],
+  "author": "Mantas Masalis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masalism/MiWebPage/issues"
+  },
+  "homepage": "https://github.com/masalism/MiWebPage#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
