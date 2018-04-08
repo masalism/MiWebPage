@@ -1,0 +1,36 @@
+.header {
+    background-image: 
+        linear-gradient(rgba($black, 0.8),
+        rgba($black, 0.2)),
+        url(/img/header.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    &__logo-box{
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%); //i pati viduri
+        backface-visibility: hidden;
+               
+    }
+
+    &__logo {
+        height: 25rem;
+        animation-name: moveInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        backface-visibility: hidden;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
