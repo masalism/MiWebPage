@@ -48,7 +48,6 @@ body {
 .heading-1 {
   color: #fff;
   text-transform: uppercase;
-  backface-visibility: hidden;
   backface-visibility: hidden; }
   .heading-1--address {
     font-weight: 300;
@@ -70,6 +69,141 @@ body {
     animation: moveInRight .6s ease-out .8s;
     animation-duration: 1s;
     animation-fill-mode: backwards; }
+
+.heading-2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1; }
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; }
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171; }
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic; }
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue; }
+
+.composition {
+  position: relative;
+  margin-top: 6rem;
+  margin-right: 10rem; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(243, 44, 155, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.footer {
+  background-color: #303531;
+  padding: 10rem 5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  backface-visibility: hidden; }
+  .footer__navigation {
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: block; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #f32c9b; }
+  .footer__kontaktai-tekstas {
+    color: #fff; }
+  .footer__logo-mi {
+    width: 30rem; }
+  .footer__copyright {
+    display: inline; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/header.jpg);
@@ -207,3 +341,13 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.section-about {
+  display: inline-block;
+  padding-top: 6rem;
+  padding-bottom: 10rem; }
+  .section-about__text {
+    font-size: 1.8rem;
+    text-align: right;
+    line-height: 3rem;
+    margin: 6rem; }

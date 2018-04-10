@@ -11,8 +11,6 @@ body {
     color: $white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    backface-visibility: hidden;
-    
     
     &--address {
         font-weight: 300;
@@ -38,4 +36,17 @@ body {
         animation-duration: 1s;
         animation-fill-mode: backwards;
     }
+}
+
+.heading-2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    background-image: linear-gradient(to right, $pink-light, $pink-dark);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
 }

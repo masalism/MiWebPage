@@ -1,0 +1,15 @@
+.section-about {
+    display: inline-block;
+    padding-top: 6rem;
+    padding-bottom: 10rem;  
+
+    &__text {
+        font-size: 1.8rem;
+        text-align: right;
+        line-height: 3rem;
+        margin: 6rem;
+        
+    }
+
+    
+}

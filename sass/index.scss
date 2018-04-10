@@ -1,9 +1,15 @@
 @import "abstracts/variables";
 
-@import "base/_animation.scss";
+@import "base/animation";
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
+@import "components/carousel";
+@import "components/composition";
+
+@import "layout/footer";
 @import "layout/header-index";
 @import "layout/navigation";
 
+@import "pages/index";
