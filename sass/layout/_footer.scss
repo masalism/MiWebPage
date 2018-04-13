@@ -1,8 +1,8 @@
 .footer {
     background-color: $grey-dark;
-    padding: 10rem 5rem;
+    padding: 6rem 2rem 2rem 6rem;
     font-size: 1.4rem;
-    line-height: 2.5rem;
+    line-height: 2.8rem;
     backface-visibility: hidden;
     
     &__navigation {
@@ -45,7 +45,13 @@
     }
 
     &__copyright {
-        display: inline;
+        padding: 8rem 0 0 0;
+        display: block;
+        background-image: cover;
+
+        &-text {
+            text-align: center;
+            color: $pink;
+        }
     }
-    
 }

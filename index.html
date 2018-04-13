@@ -13,17 +13,18 @@
 </head>
 
 <body>
+    <nav class="navigation">
 
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation__button">
+        <label onclick="nav()" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-
+        
         <div class="navigation__background">&nbsp;</div>
 
-        <nav class="navigation__nav">
+        <div id="myNav" class="navigation__overlay">
+            <!-- Button to close the overlay navigation -->
+
+            <!-- Overlay content -->
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="/index.html" class="navigation__link">Pagrindinis</a>
@@ -44,8 +45,9 @@
                     <a href="/kontaktai.html" class="navigation__link">Kontaktai</a>
                 </li>
             </ul>
-        </nav>
-    </div>
+        </div>
+
+    </nav>
 
     <header class="header">
         <div class="header__logo-box">
@@ -85,40 +87,62 @@
         </section>
 
         <section class="about-mi container-fluid">
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-
-                <!-- Full-width slides/quotes -->
-                <div class="mySlides">
-                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                    <p class="author">- John Keats</p>
+            <div class="about-mi__slideshow-container">
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Justina Ramanauskienė</div>
+                    <div class="about-mi__quote">
+                        <i>Atėjau į šią grožio studiją kaip nusivylusi namų šeimininkė, išėjau - kaip karalienė! Ačiū meistrėms
+                            labai!
+                        </i>
+                    </div>
                 </div>
 
-                <div class="mySlides">
-                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                    <p class="author">- Ernest Hemingway</p>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Kristina Bučnytė</div>
+                    <div class="about-mi__quote">
+                        <i>Superinė vieta! Meistrės žino ką daro, net sakyt nieko nereikia. Pas manikiūristę visada smagu apsilankyti,
+                            darbą atlieka puikiai, o nagučių grožiu džiaugiuosi ne savaitę ir ne dvi, tikrai atsakingai dirba!!
+                            Labai visiems rekomenduoju!</i>
+                    </div>
                 </div>
-
-                <div class="mySlides">
-                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                    <p class="author">- Thomas A. Edison</p>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Mažvydas Raudonis</div>
+                    <div class="about-mi__quote">
+                        <i>Visada lieki išklausytas, apšokinėtas ir apipatenkintas iki negalėjimo! Super</i>
+                    </div>
                 </div>
-
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Razvita Anisimenko</div>
+                    <div class="about-mi__quote">
+                        <i>Tobula studija. Išėjau iš jų kaip karalienė, dėkoju visoms už tobulus plaukus</i>
+                    </div>
+                </div>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Agnė</div>
+                    <div class="about-mi__quote">
+                        <i>Pagaliau! Daug metų blaškiausi ir niekaip nerandau tos vietos kur viską padarytų nuo A iki Z, netaupė
+                            nei savo laiko, nei priemonių, nei energijos, įgyvendino norus profiosanaliai ir atsakingai,
+                            jaučiuosi nerealiai! Tikrai sugrįšiu ir drąsiai rekomenduoju 100% profesionalumo, jau nekalbant
+                            apie jaukiai praleistą laiką šaunuolės, pirmyn! </i>
+                    </div>
+                </div>
                 <!-- Next/prev buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-
             <!-- Dots/bullets/indicators -->
             <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
-
+            <div class="u-center-text">
+                <a href="https://www.facebook.com/pg/migrozis/reviews/?ref=page_internal" class="btn u-center-text"> Daugiau atsiliepimu</a>
+            </div>
         </section>
     </main>
-
     <footer class="footer container-fluid">
         <div class="footer__social">
 
@@ -162,13 +186,13 @@
             </div>
             <div class="col">
                 <div class="footer__logo">
-                    <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi">
+                    <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi u-backface">
                 </div>
             </div>
 
         </div>
         <div class="footer__copyright">
-            <p class="footer__copyright-text .u-center-text">&copy; 2018, Mi Grožio Studija</p>
+            <p class="footer__copyright-text">&copy; 2018, Mi Grožio Studija</p>
         </div>
     </footer>
     <script src="js/index.js"></script>

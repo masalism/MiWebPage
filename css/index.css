@@ -84,73 +84,89 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 10rem;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2); }
+
+.btn:active, .btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
 /* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1; }
+.about-mi {
+  background-image: cover;
+  background: #f1f1f1; }
+  .about-mi__slideshow-container {
+    position: relative; }
+  .about-mi__mySlides {
+    display: none;
+    padding: 10rem;
+    text-align: center; }
+  .about-mi__author {
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .about-mi__quote {
+    font-size: 1.7rem;
+    line-height: 4rem;
+    padding-top: 3rem; }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center; }
-
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -30px;
-  padding: 16px;
+  height: auto;
+  padding: 1rem;
   color: #888;
   font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none; }
+  font-size: 2rem;
+  border-radius: 3px;
+  user-select: none;
+  transition: all .2s; }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px; }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(243, 44, 155, 0.8);
   color: white; }
 
-/* The dot/bullet/indicator container */
 .dot-container {
   text-align: center;
-  padding: 20px;
-  background: #ddd; }
+  padding: 2rem; }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease; }
+  transition: background-color 0.2s ease; }
 
-/* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  background-color: #717171; }
-
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic; }
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue; }
+  background-color: #f32c9b; }
 
 .composition {
   position: relative;
@@ -181,9 +197,9 @@ q {
 
 .footer {
   background-color: #303531;
-  padding: 10rem 5rem;
+  padding: 6rem 2rem 2rem 6rem;
   font-size: 1.4rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   backface-visibility: hidden; }
   .footer__navigation {
     display: inline-block; }
@@ -203,7 +219,12 @@ q {
   .footer__logo-mi {
     width: 30rem; }
   .footer__copyright {
-    display: inline; }
+    padding: 8rem 0 0 0;
+    display: block;
+    background-image: cover; }
+    .footer__copyright-text {
+      text-align: center;
+      color: #f32c9b; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/header.jpg);
@@ -229,9 +250,6 @@ q {
     left: 50%;
     transform: translate(-50%); }
 
-.navigation__checkbox {
-  display: none; }
-
 .navigation__button {
   background-color: #fff;
   height: 7rem;
@@ -240,7 +258,7 @@ q {
   position: fixed;
   top: 6rem;
   right: 6rem;
-  z-index: 2000;
+  z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
@@ -252,60 +270,11 @@ q {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#f76cba, #c61083);
-  z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-
-.navigation__nav {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1500;
-  opacity: 0;
-  width: 0;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 100%; }
+  background-image: #fff;
+  z-index: 150; }
 
 .navigation__item {
   margin: 1rem; }
-
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  padding: 1.5rem 2rem;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
-  transition: all .4s; }
-  .navigation__link:link span, .navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block; }
-
-.navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
-  color: #f32c9b;
-  transform: translateX(1rem); }
-
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%; }
 
 .navigation__icon {
   position: relative;
@@ -331,16 +300,58 @@ q {
 .navigation__button:hover .navigation__icon::after {
   top: 1rem; }
 
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+.navigation__overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  left: 0;
   top: 0;
-  transform: rotate(135deg); }
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
 
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg); }
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #f32c9b;
+  transform: translateX(1rem); }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 2rem; }
+  .overlay .closebtn {
+    font-size: 4rem;
+    top: 1.5rem;
+    right: 3.5rem; } }
 
 .section-about {
   display: inline-block;
