@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Grožio Studija</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navigation">
+
+        <label onclick="nav()" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        
+        <div class="navigation__background">&nbsp;</div>
+
+        <div id="myNav" class="navigation__overlay">
+            <!-- Button to close the overlay navigation -->
+
+            <!-- Overlay content -->
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="/index.html" class="navigation__link">Pagrindinis</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/paslaugos.html" class="navigation__link">Paslaugos</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/kolektyvas.html" class="navigation__link">Kolektyvas</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/produktai.html" class="navigation__link">Produktai</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/galerija.html" class="navigation__link">Galerija</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/kontaktai.html" class="navigation__link">Kontaktai</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="/img/logo-white.png" alt="Mi Logo" class="header__logo">
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-1">
+                <span class="heading-1--address">Kiečių 77-1, Kaunas</span>
+                <span class="heading-1--phone">+370 688 89074</span>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="section-about container-fluid">
+            <div class="u-center-text">
+                <h2 class="heading-2 u-center-text">Mums svarbiausi esate Jūs</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="section-about__text">
+                        <p>Kviečiame apsilankyti Mi grožio studijoje , Kiečių 77-1, Aleksotas, Kaunas. Jūsų laukia profesionalus
+                            ir nuoširdus aptarnavimas, ypatingas dėmesys ir jauki aplinka. Mūsų studijoje Jūs rasite kirpimo,
+                            plaukų dažymo, manikiūro, pedikiūro, kosmetologo, masažisto, blakstienų priauginimo meistrus,
+                            kurie Jums suteiks profesionalias paslaugas. Mielai kviečiame jus apsilankyti!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="composition">
+                        <img src="/img/1comp.jpg" alt="comp3" class="composition__photo composition__photo--p1">
+                        <img src="/img/5comp.jpg" alt="comp2" class="composition__photo composition__photo--p2">
+                        <img src="/img/3comp.jpg" alt="comp1" class="composition__photo composition__photo--p3">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-mi container-fluid">
+            <div class="about-mi__slideshow-container">
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Justina Ramanauskienė</div>
+                    <div class="about-mi__quote">
+                        <i>Atėjau į šią grožio studiją kaip nusivylusi namų šeimininkė, išėjau - kaip karalienė! Ačiū meistrėms
+                            labai!
+                        </i>
+                    </div>
+                </div>
+
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Kristina Bučnytė</div>
+                    <div class="about-mi__quote">
+                        <i>Superinė vieta! Meistrės žino ką daro, net sakyt nieko nereikia. Pas manikiūristę visada smagu apsilankyti,
+                            darbą atlieka puikiai, o nagučių grožiu džiaugiuosi ne savaitę ir ne dvi, tikrai atsakingai dirba!!
+                            Labai visiems rekomenduoju!</i>
+                    </div>
+                </div>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Mažvydas Raudonis</div>
+                    <div class="about-mi__quote">
+                        <i>Visada lieki išklausytas, apšokinėtas ir apipatenkintas iki negalėjimo! Super</i>
+                    </div>
+                </div>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Razvita Anisimenko</div>
+                    <div class="about-mi__quote">
+                        <i>Tobula studija. Išėjau iš jų kaip karalienė, dėkoju visoms už tobulus plaukus</i>
+                    </div>
+                </div>
+                <div class="about-mi__mySlides">
+                    <div class="about-mi__author">Agnė</div>
+                    <div class="about-mi__quote">
+                        <i>Pagaliau! Daug metų blaškiausi ir niekaip nerandau tos vietos kur viską padarytų nuo A iki Z, netaupė
+                            nei savo laiko, nei priemonių, nei energijos, įgyvendino norus profiosanaliai ir atsakingai,
+                            jaučiuosi nerealiai! Tikrai sugrįšiu ir drąsiai rekomenduoju 100% profesionalumo, jau nekalbant
+                            apie jaukiai praleistą laiką šaunuolės, pirmyn! </i>
+                    </div>
+                </div>
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <div class="u-center-text">
+                <a href="https://www.facebook.com/pg/migrozis/reviews/?ref=page_internal" class="btn u-center-text"> Daugiau atsiliepimu</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container-fluid">
+        <div class="footer__social">
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/index.html" class="footer__link">Pagrinidinis</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/paslaugos.html" class="footer__link">Paslaugos</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/kolektyvas.html" class="footer__link">Kolektyvas</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/produktai.html" class="footer__link">Produktai</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/galerija.html" class="footer__link">Galerija</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/kontaktai.html" class="footer__link">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer__kontaktai">
+                    <p class="footer__kontaktai-tekstas">
+                        Darbo laikas: </br>
+                        Pirmadienis - penktadienis: 09:00 - 19:00</br>
+                        Šestadienis: 09:00 - 14:00</br>
+                        Sekmadienis: Nedirbame</br>
+                        Kiečių 77-1, Aleksotas, Kaunas</br>
+                        Tel: +370 688 89074
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer__logo">
+                    <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi u-backface">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">&copy; 2018, Mi Grožio Studija</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

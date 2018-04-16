@@ -1,0 +1,78 @@
+/* Slideshow container */
+
+.about-mi {
+    background-image: cover;
+    background: $grey-light;
+
+    &__slideshow-container {
+        position: relative;
+    }
+
+    &__mySlides {
+        display: none;
+        padding: 10rem;
+        text-align: center;
+    }
+
+    &__author {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    
+    &__quote {
+        font-size: 1.7rem;
+        line-height: 4rem;
+        padding-top: 3rem;
+    }
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    color: #888;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 3px;
+    user-select: none;
+    transition: all .2s;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba($pink, 0.8);
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: $pink;
+}
+
+

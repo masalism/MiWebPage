@@ -1,0 +1,364 @@
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #777; }
+
+.heading-1 {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .heading-1--address {
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+    animation: moveInLeft .6s ease-out .8s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards; }
+  .heading-1--phone {
+    font-size: 4rem;
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    color: #f32c9b;
+    letter-spacing: 1rem;
+    animation: moveInRight .6s ease-out .8s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards; }
+
+.heading-2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f76cba, #c61083);
+  color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 10rem;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2); }
+
+.btn:active, .btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
+/* Slideshow container */
+.about-mi {
+  background-image: cover;
+  background: #f1f1f1; }
+  .about-mi__slideshow-container {
+    position: relative; }
+  .about-mi__mySlides {
+    display: none;
+    padding: 10rem;
+    text-align: center; }
+  .about-mi__author {
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .about-mi__quote {
+    font-size: 1.7rem;
+    line-height: 4rem;
+    padding-top: 3rem; }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  color: #888;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 3px;
+  user-select: none;
+  transition: all .2s; }
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px; }
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(243, 44, 155, 0.8);
+  color: white; }
+
+.dot-container {
+  text-align: center;
+  padding: 2rem; }
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease; }
+
+.active,
+.dot:hover {
+  background-color: #f32c9b; }
+
+.composition {
+  position: relative;
+  margin-top: 6rem;
+  margin-right: 10rem; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(243, 44, 155, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.footer {
+  background-color: #303531;
+  padding: 6rem 2rem 2rem 6rem;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  backface-visibility: hidden; }
+  .footer__navigation {
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: block; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #f32c9b; }
+  .footer__kontaktai-tekstas {
+    color: #fff; }
+  .footer__logo-mi {
+    width: 30rem; }
+  .footer__copyright {
+    padding: 8rem 0 0 0;
+    display: block;
+    background-image: cover; }
+    .footer__copyright-text {
+      text-align: center;
+      color: #f32c9b; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/header.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed; }
+  .header__logo-box {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    backface-visibility: hidden; }
+  .header__logo {
+    height: 25rem;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden; }
+  .header__text-box {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%); }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 1000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: #fff;
+  z-index: 150; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #303531;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #f32c9b;
+  transform: translateX(1rem); }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 2rem; }
+  .overlay .closebtn {
+    font-size: 4rem;
+    top: 1.5rem;
+    right: 3.5rem; } }
+
+.section-about {
+  display: inline-block;
+  padding-top: 6rem;
+  padding-bottom: 10rem; }
+  .section-about__text {
+    font-size: 1.8rem;
+    text-align: right;
+    line-height: 3rem;
+    margin: 6rem; }

@@ -1,0 +1,41 @@
+.header-secondary {
+    background-size: cover;
+    height: 75vh;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    &__logo-box-sec {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        backface-visibility: hidden;
+    }
+
+    &__logo-sec {
+        width: 30rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        backface-visibility: hidden;
+    }
+
+    &__text-box-sec {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+    }
+
+    &__text-sec {
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+        color: $white;
+        text-transform: uppercase;
+        animation-name: moveInUp;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+}

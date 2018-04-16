@@ -1,0 +1,57 @@
+.footer {
+    background-color: $grey-dark;
+    padding: 6rem 2rem 2rem 6rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    backface-visibility: hidden;
+    
+    &__navigation {
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            display: block;
+            color: $white;
+            transition: all .2s;
+            
+        }   
+
+        &:hover, 
+        &:active {
+            color: $pink;
+        }
+    }
+
+    &__kontaktai {
+
+        &-tekstas {
+            color: $white;
+        }
+    }
+
+    &__logo-mi {
+        width: 30rem;
+    }
+
+    &__copyright {
+        padding: 8rem 0 0 0;
+        display: block;
+        background-image: cover;
+
+        &-text {
+            text-align: center;
+            color: $pink;
+        }
+    }
+}
