@@ -133,6 +133,28 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
 
+.btn-small, .btn-small:link, .btn-small:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4rem;
+  padding: 2rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards; }
+
+.btn-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2); }
+
+.btn-small:active, .btn-small:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
 .table {
   width: 100%;
   max-width: 100%;
