@@ -5,19 +5,19 @@
     background-attachment: fixed;
     position: relative;
 
-    &__logo-box-sec {
+    &__logo {
         position: absolute;
         left: 2%;
         top: 5%;
         backface-visibility: hidden;
-    }
 
-    &__logo-sec {
-        width: 30rem;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        backface-visibility: hidden;
+        &--pic {
+            width: 30rem;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            backface-visibility: hidden;
+        }
     }
 
     &__text-box-sec {
@@ -36,6 +36,6 @@
         text-transform: uppercase;
         animation-name: moveInUp;
         animation-duration: 1s;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;   
     }
 }

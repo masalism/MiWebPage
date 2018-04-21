@@ -26,6 +26,12 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -127,6 +133,70 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
 
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent; }
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top; }
+  .table thead
+th {
+    vertical-align: bottom;
+    padding-bottom: 3rem;
+    color: #f32c9b;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400; }
+  .table__td-1 {
+    text-align: left; }
+  .table__td-2 {
+    text-align: center; }
+  .table__td-3 {
+    text-align: right; }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: inline-block; }
+
+/* Style the buttons that are used to open the tab content */
+.tablinks, .tablinks:link, .tablinks:visited {
+  font-size: 1.6rem;
+  background-color: inherit;
+  color: #777;
+  text-decoration: none;
+  display: block;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.7rem 1rem;
+  transition: 0.2s;
+  animation-fill-mode: backwards; }
+
+.tablinks:hover {
+  background-color: #f32c9b;
+  color: #fff;
+  border: none;
+  outline: none; }
+
+.tablinks:active, .tablinks:focus {
+  background-color: #f32c9b;
+  color: #fff;
+  border: none;
+  outline: none; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect .4s; }
+
 .footer {
   background-color: #303531;
   padding: 6rem 2rem 2rem 6rem;
@@ -157,6 +227,39 @@ body {
     .footer__copyright-text {
       text-align: center;
       color: #f32c9b; }
+
+.header-secondary {
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; }
+  .header-secondary__logo {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    backface-visibility: hidden; }
+    .header-secondary__logo--pic {
+      width: 30rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      backface-visibility: hidden; }
+  .header-secondary__text-box-sec {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden; }
+  .header-secondary__text-sec {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #fff;
+    text-transform: uppercase;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
 
 .navigation__button {
   background-color: #fff;
@@ -262,54 +365,9 @@ body {
     right: 3.5rem; } }
 
 .header-secondary {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/galery_header.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/header-paslaugos.jpg); }
 
-.gallery-photos {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative; }
-
-.img-c {
-  width: 200px;
-  height: 200px;
-  float: left;
-  position: relative;
-  overflow: hidden; }
-
-.img-w {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: transform ease-in-out 300ms; }
-
-.img-w img {
-  display: none; }
-
-.img-c {
-  transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms; }
-
-.img-c:hover .img-w {
-  transform: scale(1.08);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms; }
-
-.img-c.active {
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  z-index: 2; }
-
-.img-c.postactive {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none; }
-
-.img-c.active.positioned {
-  left: 0 !important;
-  top: 0 !important;
-  transition-delay: 50ms; }
+.paslaugos {
+  display: inline-block;
+  padding: 7rem 13rem;
+  font-size: 1.6rem; }
