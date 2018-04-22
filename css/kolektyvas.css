@@ -338,15 +338,19 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/personalas.jpg); }
 
 .kolektyvas {
-  padding: 5rem 0; }
-  .kolektyvas__box--photo {
-    border-radius: 50%;
-    width: 60%;
-    transition: all .2s; }
-  .kolektyvas__box--photo:hover {
-    transform: scale(1.05); }
+  padding: 2rem 0;
+  position: relative; }
+  .kolektyvas__box {
+    margin: 2rem 0; }
+    .kolektyvas__box--photo {
+      border-radius: 50%;
+      width: 60%;
+      transition: all .2s; }
+    .kolektyvas__box--photo:hover {
+      transform: scale(1.05); }
   .kolektyvas__textbox {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
   .kolektyvas__text {
     position: relative;
     font-size: 1.6rem;
