@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba($black, 0.8),
     rgba($black, 0.2)),
     url(/img/galery_header.jpg);
+    background-position: right;
 }
 
 .gallery-photos {
@@ -14,8 +15,9 @@
 }
 
 .img-c {
-  width: 200px;
-  height: 200px;
+  display: inline-block;
+  width: 25%;
+  height: 30rem;
   float: left;
   position: relative;
   overflow: hidden;
@@ -32,7 +34,10 @@
 }
 
 .img-w img {
-  display: none;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
   
 .img-c {
@@ -49,7 +54,7 @@
   height: 100% !important;
   position: absolute;
   z-index: 2;
-  //transform: translateX(-50%);
+  transform: translateX(-50%);
 }
   
 .img-c.postactive {
