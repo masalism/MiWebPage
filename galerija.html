@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/galerija.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
@@ -62,47 +64,31 @@
             <div class="u-center-text">
                 <h2 class="heading-2 u-center-text">Kirpimas | dažymas</h2>
             </div>
-            <div class="gallery-photos">
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_1.jpg");">
-                        <img src="/img/kirp_1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("img/kirp_2.jpg");">
-                        <img src="/img/kirp_2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_3.jpg");">
-                        <img src="/img/kirp_3.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_4.jpg");">
-                        <img src="/img/kirp_4.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_5.jpg");">
-                        <img src="/img/kirp_5.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_6.jpg");">
-                        <img src="/img/kirp_6.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="img-c">
-                    <div class="img-w" style="background-image: url("/img/kirp_7.jpg");">
-                        <img src="/img/kirp_7.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="img-c" style="background-image: url("/img/kirp_8.jpg");">
-                    <div class="img-w">
-                        <img src="/img/kirp_8.jpg" alt="" />
-                    </div>
-                </div>
+            <div class="gallery__gallery-kirpimas-dazymas">
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_1.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_1_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_2.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_2_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_3.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_3_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_4.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_4_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_5.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_5_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_6.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_6_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_7.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_7_small.jpg"></a>
+                </section>
+                <section class="gallery-photo">
+                    <a class="gallery-image-link" id="lightbox-img" href="/img/kirp_8.jpg" data-lightbox="gallery-set" data-title="#"><img class="gallery-img" src="/img/kirp_8_small.jpg"></a>
+                </section>
             </div>
         </section>
     </main>
@@ -163,8 +149,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/galerija.js"></script>
-
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
