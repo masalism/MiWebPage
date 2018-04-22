@@ -110,6 +110,15 @@ body {
 .heading-popup {
   line-height: 4rem; }
 
+.heading-3 {
+  color: #f32c9b;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline;
+  position: relative; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -328,6 +337,17 @@ body {
 .header-secondary {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/personalas.jpg); }
 
-.kolektyvas__box--photo {
-  border-radius: 50%;
-  width: 60%; }
+.kolektyvas {
+  padding: 5rem 0; }
+  .kolektyvas__box--photo {
+    border-radius: 50%;
+    width: 60%;
+    transition: all .2s; }
+  .kolektyvas__box--photo:hover {
+    transform: scale(1.05); }
+  .kolektyvas__textbox {
+    margin-top: 2rem; }
+  .kolektyvas__text {
+    position: relative;
+    font-size: 1.6rem;
+    padding: 2rem 3rem; }
