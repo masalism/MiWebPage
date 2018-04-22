@@ -11,6 +11,7 @@ function nav() {
   console.log(menu);
 }
 
+
 document.getElementById("defaultOpen").click();
 
 function openService(evt, serviceName) {

@@ -26,6 +26,12 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -127,17 +133,34 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
 
+.btn-small, .btn-small:link, .btn-small:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4rem;
+  padding: 2rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #f76cba, #c61083);
+  transition: all .2s;
+  animation-fill-mode: backwards; }
+
+.btn-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(243, 44, 155, 0.2); }
+
+.btn-small:active, .btn-small:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(243, 44, 155, 0.2); }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-<<<<<<< HEAD
-  height: 50rem;
-  width: 40rem;
-=======
   height: 45rem;
   width: 30rem;
->>>>>>> 786cf55cac5712ab7997a147eff6ce4ec3e6cd60
   margin-top: 3rem;
   margin-bottom: 10rem; }
   .card__side {
@@ -164,11 +187,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-<<<<<<< HEAD
-    height: 42rem; }
-=======
     height: 30rem; }
->>>>>>> 786cf55cac5712ab7997a147eff6ce4ec3e6cd60
     .card__picture--1 {
       background-image: url(../img/matrix_socolor.jpg); }
     .card__picture--2 {
@@ -223,17 +242,17 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative; }
-  .header-secondary__logo-box-sec {
+  .header-secondary__logo {
     position: absolute;
     left: 2%;
     top: 5%;
     backface-visibility: hidden; }
-  .header-secondary__logo-sec {
-    width: 30rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    backface-visibility: hidden; }
+    .header-secondary__logo--pic {
+      width: 30rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      backface-visibility: hidden; }
   .header-secondary__text-box-sec {
     position: absolute;
     left: 50%;
