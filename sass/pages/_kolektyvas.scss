@@ -5,13 +5,16 @@
 }
 
 .kolektyvas {
-    padding: 5rem 0;
+    padding: 2rem 0;
+    position: relative;
 
     &__box {
+        margin: 2rem 0;
         &--photo {
             border-radius: 50%;
             width: 60%;
             transition: all .2s;
+
         }
 
         &--photo:hover {
@@ -21,6 +24,7 @@
 
     &__textbox {
         margin-top: 2rem;
+        margin-bottom: 4rem;
     }
 
     &__text {
