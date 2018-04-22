@@ -3,3 +3,17 @@
     rgba($black, 0.2)),
     url(/img/personalas.jpg);
 }
+
+.kolektyvas {
+    padding: 5rem 0;
+
+
+    &__box {
+
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 55%;
+    }
+}
