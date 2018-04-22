@@ -107,6 +107,9 @@ body {
   left: 50%;
   transform: translate(-50%); }
 
+.heading-popup {
+  line-height: 4rem; }
+
 .u-center-text {
   text-align: center !important; }
 
