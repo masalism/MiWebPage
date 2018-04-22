@@ -332,19 +332,22 @@ body {
 .gallery {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
-  max-width: 120rem;
-  position: relative; }
+  max-width: 120rem; }
 
 .gallery-photo {
   width: 25%;
+  height: 40rem;
   float: left;
-  position: relative; }
+  position: relative;
+  display: inline; }
 
 .gallery-img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: auto; }
+  width: auto;
+  overflow: hidden;
+  position: relative; }
 
 .gallery-img:hover {
   transform: scale(1.08); }

@@ -9,13 +9,14 @@
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
   max-width: 120rem;
-  position: relative;
 }
 
 .gallery-photo {
   width: 25%;
+  height: 40rem;
   float: left;
   position: relative;
+  display: inline;
 }
 
 .gallery-img {
@@ -23,6 +24,8 @@
   max-width: 100%;
   height: auto;
   width: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .gallery-img:hover {
