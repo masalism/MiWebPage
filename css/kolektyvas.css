@@ -107,6 +107,9 @@ body {
   left: 50%;
   transform: translate(-50%); }
 
+.heading-popup {
+  line-height: 4rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -136,9 +139,9 @@ body {
 .btn-small, .btn-small:link, .btn-small:visited {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border-radius: 4rem;
-  padding: 2rem;
+  padding: 0.5rem;
   display: inline-block;
   margin-bottom: 0.4rem;
   text-align: center;
@@ -185,6 +188,39 @@ body {
     .footer__copyright-text {
       text-align: center;
       color: #f32c9b; }
+
+.header-secondary {
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; }
+  .header-secondary__logo {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    backface-visibility: hidden; }
+    .header-secondary__logo--pic {
+      width: 30rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      backface-visibility: hidden; }
+  .header-secondary__text-box-sec {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden; }
+  .header-secondary__text-sec {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #fff;
+    text-transform: uppercase;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
 
 .navigation__button {
   background-color: #fff;
@@ -288,3 +324,10 @@ body {
     font-size: 4rem;
     top: 1.5rem;
     right: 3.5rem; } }
+
+.header-secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/personalas.jpg); }
+
+.kolektyvas__box--photo {
+  border-radius: 50%;
+  width: 60%; }
