@@ -338,26 +338,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/img/galery_header.jpg);
   background-position: right; }
 
-.gallery {
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
-  max-width: 120rem; }
-
-.gallery-photo {
-  width: 25%;
-  height: 40rem;
-  float: left;
-  position: relative;
-  display: inline; }
-
-.gallery-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  overflow: hidden;
-  position: relative; }
-
 .gallery-img:hover {
   transform: scale(1.08); }
 
