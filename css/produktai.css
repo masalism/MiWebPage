@@ -131,8 +131,13 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+<<<<<<< HEAD
   height: 50rem;
   width: 40rem;
+=======
+  height: 45rem;
+  width: 30rem;
+>>>>>>> 786cf55cac5712ab7997a147eff6ce4ec3e6cd60
   margin-top: 3rem;
   margin-bottom: 10rem; }
   .card__side {
@@ -159,7 +164,11 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     height: 42rem; }
+=======
+    height: 30rem; }
+>>>>>>> 786cf55cac5712ab7997a147eff6ce4ec3e6cd60
     .card__picture--1 {
       background-image: url(../img/matrix_socolor.jpg); }
     .card__picture--2 {

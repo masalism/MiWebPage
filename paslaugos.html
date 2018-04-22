@@ -18,7 +18,7 @@
         <label onclick="nav()" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-        
+
         <div class="navigation__background">&nbsp;</div>
 
         <div id="myNav" class="navigation__overlay">
@@ -48,68 +48,563 @@
         </div>
 
     </nav>
-        <main>
-            
-        </main>
-        <footer class="footer container-fluid">
-            <div class="footer__social">
-    
-            </div>
+    <header class="header-secondary">
+        <div class="header-secondary__logo">
+            <img src="/img/logo-white-small.png" alt="Mi Logo" class="header-secondary__logo--pic">
+        </div>
+
+        <div class="header-secondary__text-box-sec">
+            <div class="header-secondary__text-sec">Paslaugos</div>
+        </div>
+    </header>
+    <main>
+        <div class="tab container-fluid">
             <div class="row">
-                <div class="col">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="/index.html" class="footer__link">Pagrinidinis</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="/paslaugos.html" class="footer__link">Paslaugos</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="/kolektyvas.html" class="footer__link">Kolektyvas</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="/produktai.html" class="footer__link">Produktai</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="/galerija.html" class="footer__link">Galerija</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="/kontaktai.html" class="footer__link">Kontaktai</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="footer__kontaktai">
-                        <p class="footer__kontaktai-tekstas">
-                            Darbo laikas: </br>
-                            Pirmadienis - penktadienis: 09:00 - 19:00</br>
-                            Šestadienis: 09:00 - 14:00</br>
-                            Sekmadienis: Nedirbame</br>
-                            Kiečių 77-1, Aleksotas, Kaunas</br>
-                            Tel: +370 688 89074
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="footer__logo">
-                        <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi u-backface">
-                    </div>
-                </div>
-    
+                <button class="tablinks col" id="defaultOpen" onclick="openService(event, 'Kirpykla')">Kirpyklos Paslaugos</button>
+                <button class="tablinks col" onclick="openService(event, 'Manikiuras')">
+                    Manikiūro Paslaugos
+                </button>
+                <button class="tablinks col" onclick="openService(event, 'Masažuotojas')">
+                    Masažuotojo Paslaugos
+                </button>
+                <button class="tablinks col" onclick="openService(event, 'Kosmetologas')">
+                    Kosmetologo-visažisto Paslaugos
+                </button>
+                <button class="tablinks col" onclick="openService(event, 'Grimas')">
+                    Makiažo-grimo Paslaugos
+                </button>
             </div>
-            <div class="footer__copyright">
-                <p class="footer__copyright-text">&copy; 2018, Mi Grožio Studija</p>
+
+        </div>
+        <!-- Tab content -->
+        <div id="Kirpykla" class="tabcontent container-fluid paslaugos">
+            <table class="table">
+                <thead>
+                    <th scope="col" class="table__td-1">Paslauga</th>
+                    <th scope="col" class="table__td-2"></th>
+                    <th scope="col" class="table__td-3">Kaina</th>
+                </thead>
+                <tbody class="paslaugos__table">
+                    <tr>
+                        <td class="table__td-1" scope="row">Moteriškas kirpimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15 - 25€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Vyriškas kirpimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">8 - 10€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Vaikiškas kirpimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">7€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Šukavimas ir galvos plovimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15 - 20€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Proginės šukuosenos</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10 - 50€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Cheminis šukavimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35 - 50€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Sruogų dažymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">49 - 80€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Šaknų dažymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">30 - 40€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Plaukų dažymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">40 - 70€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Dažymas BOND ULTIMA 8 sistema</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10 - 15€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Procedūra plaukams su BOND ULTIMA 8 sistema</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">20 - 25€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Galvos odos pilingas + fenavimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15 - 20€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Plauko struktūros atstatymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">8 - 20€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Manikiuras" class="tabcontent container-fluid paslaugos">
+            <table class="table">
+                <thead>
+                    <th scope="col" class="table__td-1">Paslauga</th>
+                    <th scope="col" class="table__td-2"></th>
+                    <th scope="col" class="table__td-3">Kaina</th>
+                </thead>
+                <tbody class="paslaugos__table">
+                    <tr>
+                        <td class="table__td-1" scope="row">Antakių dažymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">3€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Antakių korekcija</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">3€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Blakstienų dažymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">3€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Manikiūras</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">9€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Manikiūras + ilgalaikis gelinis lakavimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">16€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">ilgalaikis gelinis lakavimas (prancūziškas)</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">+1€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">ilgalaikis gelinis lakavimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Nagų dailė</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">+1 - 5€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Pedikiūras</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">20€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Pedikiūras + ilgalaikis gelinis lakavimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">26€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Blakstienų priauginimas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Blakstienų papildymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Masažuotojas" class="tabcontent container-fluid paslaugos">
+            <table class="table">
+                <thead>
+                    <th scope="col" class="table__td-1">Paslauga</th>
+                    <th scope="col" class="table__td-2"></th>
+                    <th scope="col" class="table__td-3">Kaina</th>
+                </thead>
+                <tbody class="paslaugos__table">
+                    <tr>
+                        <td class="table__td-1" scope="row">Miofascialinis veido ir galvos masažas.
+                            <i>Trukmė: 75 - 90 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">28€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Kobido veido masažas.
+                            <i>Trukmė: 60 - 75 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Atpalaiduojantis (antistresinis) kūno masažas.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">30€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Anticeliulitinis masažas (Slim).
+                            <i>Trukmė: 50 - 60 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">20€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Liposažas.
+                            <i>Trukmė: 50 - 60 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">20€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Klasikinis kūno masažas.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2 btn-small">Plačiau</td>
+                        <td class="table__td-3">30€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Nugaros masažas.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">12€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Kosmetologas" class="tabcontent container-fluid paslaugos">
+            <table class="table">
+                <thead>
+                    <th scope="col" class="table__td-1">Paslauga</th>
+                    <th scope="col" class="table__td-2"></th>
+                    <th scope="col" class="table__td-3">Kaina</th>
+                </thead>
+                <tbody class="paslaugos__table">
+                    <tr>
+                        <td class="table__td-1" scope="row">Veido pilingas ir masažas su kauke.
+                            <i>Trukmė: 60 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Gilumunis veido odos valymas.
+                            <i>Trukmė: 60 - 120 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">30-45€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Ultragarsinis veido valymas.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Riebios veido odos subalansavimas.
+                            <i>Trukmė: 60 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Brandžios veido odos procedūra.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 35€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Giliai drėkinanti veido procedūra.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 35€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Raminanti veido procedūra jautriai odai.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 30€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Raminanti veido procedūra jautriai odai.
+                            <i>Trukmė: 90 min.</i>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 35€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rūgštinio pilingo procedūra
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35 - 65€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Biorevitalizacija
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 150€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Mezoterapiją imituojanti veido odos procedūra
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 45€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Veido mezoterapija
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">nuo 50€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Veido mezoterapija
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">30€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">
+                            <b>Depiliacija vašku:</b>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3"></td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Antakiai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">4€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Viršutinė lūpa / smakras
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">4 / 6€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Pažastys
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">9€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rankos iki alkūnių
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rankos pilnai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rankos iki alkūnių
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Blauzdos / šlaunys
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">12€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Kojos pilnai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini krašteliai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">10€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini prancūziškas (dalinis)
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">18€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini braziliškas (pilnas)
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">
+                            <b>Epiliacija cukraus pasta / Enzimų terapija</b>
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3"></td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Viršutinė lūpa / smakras
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">5 / 4€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Pažastys
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">12 / 9€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rankos iki alkūnių
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">14 / 18€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Rankos pilnai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">21 / 18€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Kojos pilnai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35 / 35€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini krašteliai
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15 / 9€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini prancūziškas (dalinis)
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">24 / 18€</td>
+                    </tr>
+                    <tr>
+                        <td class="table__td-1" scope="row">Bikini braziliškas (pilnas)
+                        </td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35 / 18€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Grimas" class="tabcontent container-fluid paslaugos">
+            <table class="table">
+                <thead>
+                    <th scope="col" class="table__td-1">Paslauga</th>
+                    <th scope="col" class="table__td-2"></th>
+                    <th scope="col" class="table__td-3">Kaina</th>
+                </thead>
+                <tbody class="paslaugos__table">
+                    <tr>
+                        <td class="table__td-1" scope="row">Dieninis makiažas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">20€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Vakarinis makiažas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">30€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Proginis makiažas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">30€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Nuotakos makiažas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">35€</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="table__td-1">Teminis/fantastinis grimas/žaizdų formavimas, prostetikų klijavimas/lipdymas</td>
+                        <td class="table__td-2"></td>
+                        <td class="table__td-3">15-50€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer container-fluid">
+        <div class="footer__social">
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/index.html" class="footer__link">Pagrinidinis</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/paslaugos.html" class="footer__link">Paslaugos</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/kolektyvas.html" class="footer__link">Kolektyvas</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/produktai.html" class="footer__link">Produktai</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/galerija.html" class="footer__link">Galerija</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/kontaktai.html" class="footer__link">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+            <div class="col">
+                <div class="footer__kontaktai">
+                    <p class="footer__kontaktai-tekstas">
+                        Darbo laikas: </br>
+                        Pirmadienis - penktadienis: 09:00 - 19:00</br>
+                        Šestadienis: 09:00 - 14:00</br>
+                        Sekmadienis: Nedirbame</br>
+                        Kiečių 77-1, Aleksotas, Kaunas</br>
+                        Tel: +370 688 89074
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer__logo">
+                    <img src="/img/logo-white.png" alt="Mi logo" class="footer__logo-mi u-backface">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">&copy; 2018, Mi Grožio Studija</p>
+        </div>
+    </footer>
     </div>
-    
-    <script src="js/index.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/paslaugos.js"></script>
 </body>
 
 </html>
