@@ -5,15 +5,16 @@
 }
 
 .kolektyvas {
-    padding: 5rem 0;
+    
 
 
     &__box {
 
+        &--photo {
+            border-radius: 50%;
+            width: 60%;
+        }
+
     }
 
-    &__photo {
-        border-radius: 50%;
-        width: 55%;
-    }
 }
