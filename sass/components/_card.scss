@@ -18,7 +18,7 @@
         border-radius: .3rem;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($black, .15);
-        padding: 5rem;
+        padding-top: 3rem;
 
         &--front {
             background-color: $white;            
@@ -33,16 +33,16 @@
                 background-image: linear-gradient(to right bottom, $card-red, $card-red-dark);
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $grey-text, $grey-dark);
+                background-image: linear-gradient(to right bottom, $card-purple, $card-purple-dark);
             }
             &-4 {
-                background-image: linear-gradient(to right bottom, $grey-text, $grey-dark);
+                background-image: linear-gradient(to right bottom, $card-purple, $card-purple-dark);
             }
             &-5 {
-                background-image: linear-gradient(to right bottom, $grey-text, $grey-dark);
+                background-image: linear-gradient(to right bottom, $card-blue, $card-blue-dark);
             }
             &-6 {
-                background-image: linear-gradient(to right bottom, $grey-text, $grey-dark);
+                background-image: linear-gradient(to right bottom, $card-green, $card-green-dark);
             }
         }
     }
@@ -93,6 +93,6 @@
         text-align: center;
         font-size: 1.5rem;
         color: $white;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 }
