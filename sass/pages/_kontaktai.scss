@@ -7,20 +7,14 @@
 .contacs-info {
     display: inline-block;
     width: 100%;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     font-size: 1.5rem;
     line-height: 3.3rem;
 
     &__data {
         text-align: right;
         padding-right: 1rem;
-    }
-
-    &__data-img {
-        height: 1.5rem;
-        width: auto;
-        margin-right: 1.5rem;
     }
 
     &__scedule {

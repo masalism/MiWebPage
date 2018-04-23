@@ -295,7 +295,7 @@ th {
 
 .footer {
   background-color: #303531;
-  padding: 6rem 2rem 2rem 6rem;
+  padding: 3rem 2rem 2rem 6rem;
   font-size: 1.4rem;
   line-height: 2.8rem;
   backface-visibility: hidden; }
@@ -323,6 +323,23 @@ th {
     .footer__copyright-text {
       text-align: center;
       color: #f32c9b; }
+  .footer__social {
+    display: block;
+    padding: 2rem 0;
+    letter-spacing: 1rem; }
+    .footer__social--links {
+      font-size: 3.5rem; }
+
+.ion-social-facebook,
+.ion-social-instagram {
+  color: #f32c9b;
+  transition: color 0.2s; }
+
+.ion-social-facebook:hover {
+  color: #3b5998; }
+
+.ion-social-instagram:hover {
+  color: #517fa4; }
 
 .header-secondary {
   background-size: cover;
