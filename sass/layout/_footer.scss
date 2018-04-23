@@ -1,6 +1,6 @@
 .footer {
     background-color: $grey-dark;
-    padding: 6rem 2rem 2rem 6rem;
+    padding: 3rem 2rem 2rem 6rem;
     font-size: 1.4rem;
     line-height: 2.8rem;
     backface-visibility: hidden;
@@ -53,4 +53,28 @@
             color: $pink;
         }
     }
+
+    &__social {
+        display: block;
+        padding: 2rem 0;
+        letter-spacing: 1rem;
+
+        &--links {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.ion-social-facebook,
+.ion-social-instagram {
+    color: $pink;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: $facebook;
+}
+
+.ion-social-instagram:hover {
+    color: $isntagram;
 }
