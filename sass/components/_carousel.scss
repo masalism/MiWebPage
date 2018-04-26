@@ -3,14 +3,13 @@
 .about-mi {
     background-image: cover;
     background: $grey-light;
-    //animation: fadeEffect .2s;  
     &__slideshow-container {
         position: relative;
     }
 
     &__mySlides {
         display: none;
-        padding: 10rem;
+        padding: 7rem 0 5rem 0;
         text-align: center;
         animation: fadeEffect .5s;  
 
@@ -33,8 +32,8 @@
 .prev,
 .next {
     cursor: pointer;
-    position: fixed;
-    top: 30%;
+    position: absolute;
+    top: 15rem;
     width: auto;
     height: auto;
     padding: 1rem;
@@ -47,13 +46,9 @@
 }
 
 .next {
-    position: fixed;
-    right: 1rem;
+    position: absolute;
+    right: 0;
     border-radius: 3px;
-}
-
-.prev {
-    left: 1rem;
 }
 
 .prev:hover,
