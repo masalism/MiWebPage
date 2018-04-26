@@ -187,7 +187,7 @@ body {
     position: relative; }
   .about-mi__mySlides {
     display: none;
-    padding: 7rem 0 5rem 0;
+    padding: 7rem 10rem 5rem 10rem;
     text-align: center;
     animation: fadeEffect .5s; }
   .about-mi__author {
