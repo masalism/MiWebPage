@@ -3,7 +3,7 @@
 .about-mi {
     background-image: cover;
     background: $grey-light;
-
+    //animation: fadeEffect .2s;  
     &__slideshow-container {
         position: relative;
     }
@@ -12,24 +12,29 @@
         display: none;
         padding: 10rem;
         text-align: center;
+        animation: fadeEffect .5s;  
+
     }
 
     &__author {
         text-transform: uppercase;
         font-size: 2rem;
+
     }
     
     &__quote {
         font-size: 1.7rem;
         line-height: 4rem;
         padding-top: 3rem;
+ 
     }
+
 }
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 30%;
     width: auto;
     height: auto;
     padding: 1rem;
@@ -42,9 +47,13 @@
 }
 
 .next {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 1rem;
     border-radius: 3px;
+}
+
+.prev {
+    left: 1rem;
 }
 
 .prev:hover,

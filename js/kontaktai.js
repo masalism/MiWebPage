@@ -10,3 +10,4 @@ function nav() {
   x.style.width = menu + "%";
   console.log(menu);
 }
+
